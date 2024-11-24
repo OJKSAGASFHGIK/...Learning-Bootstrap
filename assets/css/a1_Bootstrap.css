@@ -1,0 +1,26 @@
+header.container-fluid { background: cyan }
+.introduction h1 {
+    color: white; background: red;
+    text-align: center;}
+
+/**/
+.code::before {
+    content: "Code: "; color: orangered;
+} .code { border: orangered solid 1px; margin-top: 9px; }
+.code-html::before {
+    content: "HTML: "; color: orangered;
+} .code-html { border: orangered solid 1px; margin-top: 9px; }
+.code-css::before {
+    content: "CSS: "; color: orangered;
+} .code-css { border: orangered solid 1px; margin-top: 9px; }
+
+/**/
+.section2 .row { margin: 0; }
+.section2 .row div div { height:9.5vh;
+    background: red; border: purple solid 1px;
+    margin: 1vh 0; }
+
+/**/
+.section3 .row { margin: 0; }
+.section3 .s3grid div div { height:9.5vh;
+    background: red; border: purple solid 1px; }
