@@ -24,3 +24,16 @@ header.container-fluid { background: cyan }
 .section3 .row { margin: 0; }
 .section3 .s3grid div div { height:9.5vh;
     background: red; border: purple solid 1px; }
+
+/**/
+.table-custom {
+    background-color: red; /* Cor personalizada de fundo (bege) */
+    color: white; /* Cor do texto */
+}
+.table-custom thead {
+    background-color: red; /* Cabeçalho com fundo azul escuro */
+    color: white; /* Texto branco no cabeçalho */
+}
+    .table-custom tbody tr:hover {
+    background-color: red; /* Fundo cinza claro no hover */
+}

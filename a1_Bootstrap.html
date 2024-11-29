@@ -61,7 +61,7 @@
                 <div></div>
             </div>
         </div>
-        <div class="code">
+        <div class="code container-fluid">
             <div class="code-html">
                 <pre id="id1TextColumnsHTML"></pre>
             </div>
@@ -74,7 +74,7 @@
     <section class="section3">
         <header class="container-fluid">
             <h2>
-                Columns: <span style="color:blue">breakpoints</span> and <span style="color:red">gy</span>(gap)
+                Columns: <span style="color:blue">breakpoints</span> and <span style="color:red">g, gx and gy</span>(gap (<span style="color:blue">gap until 5</span>, ex: <span style="color:red">gy-5</span>))
             </h2>
         </header>
         <div class="s3grid container-fluid row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-2">
@@ -91,10 +91,169 @@
                 <div></div>
             </div>
         </div>
-
+        <div class="code container-fluid">
+            <div class="code-html"><span style="color:red">row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-2</span>
+                <pre id="id2BreakpointsHTML"></pre>
+            </div>
+            <div class="code-css">
+                <pre id="id2BreakpointsCSS"></pre>
+            </div>
+        </div>
     </section>
 
+    <section class="section4">
+        <header class="container-fluid">
+            <h2>Table</h2>
+        </header>
+        <div class="container-fluid">
+            <table class="table table-dark table-hover table-bordered table-sm"> <!--table-striped -->
+                <thead class="table-active">
+                    <tr>
+                        <th>a</th>
+                        <th>b</th>
+                        <th>c</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="code container-fluid">
+                <pre id="id4TableHTML"></pre>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section5">
+        <header class="container-fluid">
+            <h2>Form Basics</h2>
+        </header>
+        <div class="container-fluid">
+            <form action="">
+                <div>
+                    <label for="email" class="form-label">Email: </label>
+                    <input id="e-mail" type="e-mail" class="form-control form-control-sm">
+                    <button>Submit</button>
+                    <div class="code container-fluid">
+                        <pre>
+-input [type=email] classes:
+form-control
+form-control-sm
+form-control-lg
+                        </pre>
+                    </div>
+                </div>
 
+                <div>
+                    <input type="color" class="form-control form-control-color">
+                    <div class="code container-fluid">
+                        <pre>
+-input [type=color] classes:
+form-control form-control-color
+                        </pre>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="range" class="form-range">
+                    <div class="code container-fluid">
+                        <pre>
+-input[type=range] classes:
+form-range
+                        </pre>
+                    </div>
+                </div>
+
+                <div>
+                    <select name="" id="" class="form-select">
+                        <option value="">one</option>
+                        <option value="">two</option>
+                    </select>
+                    <div class="code container-fluid">
+                        <pre>
+-select classes:
+form-select
+form-select-sm
+form-select-lg
+                        </pre>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input type="checkbox" id="email" class="form-check-input">
+                        <label for="email" class="form-check-label">E-mail</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input type="checkbox" id="email" class="form-check-input">
+                        <label for="email" class="form-check-label">E-mail</label>
+                    </div>
+                    <div class="code container-fluid">
+                        <pre>
+div class="form-check form-switch form-check-inline"
+	input type="checkbox" id="email" class="form-check-input"
+	label for="email" class="form-check-label"
+                        </pre>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section6">
+        <header class="container-fluid">
+            <h2>Input Groups</h2>
+        </header>
+        <div class="container-fluid">
+            <label for="text" class="form-label">Amount:</label>
+            <div class="input-group input-group-lg">
+                <div class="input-group-text">$</div>
+                <input type="number" id="text" class="form-control">
+                <button class="btn btn-primary">+</button>
+                <button class="btn btn-primary">-</button>
+            </div>
+            <button>Submit</button>
+            <div class="code container-fluid">
+                <div class="code-html">
+                    <pre id="">
+label for=text .form-label {Amount:}
+div .input-group .input-group-lg
+	div .input-group-text {$}
+	input type=number id=text .form-control
+	button .btn .btn-primary {+}
+button {Submit}
+                    </pre>
+                </div>
+            </div>     
+        </div>
+    </section>
+
+    <section class="section7">
+        <header>
+            <h2 class="container-fluid">Floating Labels</h2>
+        </header>
+        <div class="container-fluid">
+            <div class="form-floating">
+                <input type="email" id="email" class="form-control" placeholder="Place email here (just for screen reader)">
+                <label for="email" class="form-control">Email</label>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
