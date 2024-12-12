@@ -178,8 +178,7 @@ document.getElementById("id14StackUtilities").innerHTML =
 
 //
 document.getElementById("id15BorderUtilities").innerHTML =
-`
-&lt;div class=&quot;row row-cols-6 gy-2 gx-2&quot; style=&quot;margin:0&quot;&gt;
+`&lt;div class=&quot;row row-cols-6 gy-2 gx-2&quot; style=&quot;margin:0&quot;&gt;
     &lt;div class=&quot;col&quot;&gt;
         &lt;div class=&quot;<span style="color:red">border border-primary border-3 rounded-3</span>&quot;&gt;Lorem ipsum, dolor sit amet consectetur
             adipisicing elit. Placeat.&lt;/div&gt;
@@ -204,5 +203,4 @@ document.getElementById("id15BorderUtilities").innerHTML =
         &lt;div class=&quot;col <span style="color:red">border-bottom</span> border-primary border-3&quot;&gt;Lorem ipsum dolor sit, amet consectetur
             adipisicing elit. Tempora!&lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-`;
+&lt;/div&gt;`;
