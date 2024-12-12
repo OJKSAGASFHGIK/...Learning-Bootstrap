@@ -61,12 +61,22 @@
                 <div></div>
             </div>
         </div>
-        <div class="code container-fluid">
-            <div class="code-html">
-                <pre id="id1TextColumnsHTML"></pre>
-            </div>
-            <div class="code-css">
-                <pre id="id1TextColumnsCSS"></pre>
+
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f2Card"
+                aria-expanded="false" aria-controls="f2Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f2Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id1TextColumnsHTML"></pre>
+                    </div>
+                    <div class="code-css">
+                        <pre id="id1TextColumnsCSS"></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -92,12 +102,24 @@
                 <div></div>
             </div>
         </div>
-        <div class="code container-fluid">
-            <div class="code-html"><span style="color:red">row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-2</span>
-                <pre id="id2BreakpointsHTML"></pre>
-            </div>
-            <div class="code-css">
-                <pre id="id2BreakpointsCSS"></pre>
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f3Card"
+                aria-expanded="false" aria-controls="f3Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f3Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <div class="code-html"><span style="color:red">row row-cols-1 row-cols-md-2 row-cols-lg-3
+                                gy-2</span>
+                            <pre id="id2BreakpointsHTML"></pre>
+                        </div>
+                        <div class="code-css">
+                            <pre id="id2BreakpointsCSS"></pre>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,8 +155,19 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="code container-fluid">
-                <pre id="id4TableHTML"></pre>
+        </div>
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f1Card"
+                aria-expanded="false" aria-controls="f1Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f1Card">
+                <div class="code container-fluid">
+                    <div class="code container-fluid">
+                        <pre id="id4TableHTML"></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -149,33 +182,64 @@
                     <label for="email" class="form-label">Email: </label>
                     <input id="e-mail" type="e-mail" class="form-control form-control-sm">
                     <button>Submit</button>
-                    <div class="code container-fluid">
-                        <pre>
+                    <div class="container-fluid buttonB">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f4d1Card"
+                            aria-expanded="false" aria-controls="f4d1Card">
+                            Show/Hide code
+                        </button>
+
+                        <div class="collapse" id="f4d1Card">
+                            <div class="code">
+                                <pre>
 -input [type=email] classes:
 form-control
 form-control-sm
 form-control-lg
-                        </pre>
+                            </pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <input type="color" class="form-control form-control-color">
-                    <div class="code container-fluid">
-                        <pre>
+                    <div class="container-fluid buttonB">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f4d2Card"
+                            aria-expanded="false" aria-controls="f4d2Card">
+                            Show/Hide code
+                        </button>
+
+                        <div class="collapse" id="f4d2Card">
+                            <div class="code container-fluid">
+                                <div class="code">
+                                    <pre>
 -input [type=color] classes:
 form-control form-control-color
-                        </pre>
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <input type="range" class="form-range">
-                    <div class="code container-fluid">
-                        <pre>
+                    <div class="container-fluid buttonB">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f3d3Card"
+                            aria-expanded="false" aria-controls="f3d3Card">
+                            Show/Hide code
+                        </button>
+
+                        <div class="collapse" id="f3d3Card">
+                            <div class="code container-fluid">
+                                <div class="code-html">
+                                    <pre>
 -input[type=range] classes:
 form-range
-                        </pre>
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -184,13 +248,25 @@ form-range
                         <option value="">one</option>
                         <option value="">two</option>
                     </select>
-                    <div class="code container-fluid">
-                        <pre>
+
+                    <div class="container-fluid buttonB">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f5d4Card"
+                            aria-expanded="false" aria-controls="f5d4Card">
+                            Show/Hide code
+                        </button>
+
+                        <div class="collapse" id="f5d4Card">
+                            <div class="code container-fluid">
+                                <div class="code-html">
+                                    <pre>
 -select classes:
 form-select
 form-select-sm
 form-select-lg
-                        </pre>
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -203,12 +279,23 @@ form-select-lg
                         <input type="checkbox" id="email" class="form-check-input">
                         <label for="email" class="form-check-label">E-mail</label>
                     </div>
-                    <div class="code container-fluid">
-                        <pre>
+                    <div class="container-fluid buttonB">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f5d5Card"
+                            aria-expanded="false" aria-controls="f5d5Card">
+                            Show/Hide code
+                        </button>
+
+                        <div class="collapse" id="f5d5Card">
+                            <div class="code container-fluid">
+                                <div class="code-html">
+                                    <pre>
 div class="form-check form-switch form-check-inline"
-	input type="checkbox" id="email" class="form-check-input"
-	label for="email" class="form-check-label"
-                        </pre>
+    input type="checkbox" id="email" class="form-check-input"
+    label for="email" class="form-check-label"
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -229,16 +316,25 @@ div class="form-check form-switch form-check-inline"
                 <button class="btn btn-primary">-</button>
             </div>
             <button>Submit</button>
-            <div class="code container-fluid">
-                <div class="code-html">
-                    <pre id="">
+            <div class="container-fluid buttonB">
+                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f6Card"
+                    aria-expanded="false" aria-controls="f6Card">
+                    Show/Hide code
+                </button>
+
+                <div class="collapse" id="f6Card">
+                    <div class="code container-fluid">
+                        <div class="code-html">
+                            <pre id="">
 label for=text .form-label {Amount:}
 div .input-group .input-group-lg
-	div .input-group-text {$}
-	input type=number id=text .form-control
-	button .btn .btn-primary {+}
+    div .input-group-text {$}
+    input type=number id=text .form-control
+    button .btn .btn-primary {+}
 button {Submit}
-                    </pre>
+                        </pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -255,14 +351,23 @@ button {Submit}
                 <label for="email">Email</label>
             </div>
         </div>
-        <div class="code container-fluid">
-            <div class="code-html">
-                <pre>
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f7Card"
+                aria-expanded="false" aria-controls="f7Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f7Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre>
 div.container-fluid
     div<span style="color:red">.form-floating</span>
     input[type=email][id=email][placeholder="Place email here(just for screen reader)"].form-control
     label[for=email]{Email}
-                </pre>
+                    </pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -288,9 +393,18 @@ div.container-fluid
                 <button class="btn btn-outline-danger">Click</button>
             </div>
         </div>
-        <div class="code container-fluid">
-            <div class="code-html">
-                <pre id="id8Buttons"></pre>
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f8Card"
+                aria-expanded="false" aria-controls="f8Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f8Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id8Buttons"></pre>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -307,74 +421,339 @@ div.container-fluid
             <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
         </div>
 
-        <div class="code container-fluid">
-            <div class="code-html">
-                <pre id="id9Alerts"></pre>
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f9Card"
+                aria-expanded="false" aria-controls="f9Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f9Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id9Alerts"></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section10">
+    <section class="section10-Cards">
         <header class="container-fluid">
             <h2>Cards</h2>
+            <p>If you want to do spaces between the cards, instead of using "<span style="color:red">.card-group</span>"
+                you can put these "<span style="color:red">.card</span>" inside a "<span style="color:red">div</span>"
+                and use "<span style="color:blue">bootstrap columns and margin 0 (back to the topic above for see
+                    more)</span>"</p>
         </header>
-        <div style="margin:0" class="row row-cols-3 gy-3">
-            <div>
-                <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/100" alt="">
-                    <div class="card-body" >     
-                        <h2 class="card-title">Title</h2>
-                        <p class="card-subtitle">Subtitle</p>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium
-                            molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus atque
-                            voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
-                    </div>
+        <div class="card-group" style="margin: 9px 27px">
+            <div class="card">
+                <img class="card-img-top" src="assets/img/a2Background.svg" alt="">
+                <div class="card-body">
+                    <h2 class="card-title">Title</h2>
+                    <p class="card-subtitle">Subtitle</p>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+                        accusantium
+                        molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus
+                        atque
+                        voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
                 </div>
             </div>
 
-            <div>
-                <div class="card">
-                    <div class="card-body" >     
-                        <h2 class="card-title">Title</h2>
-                        <p class="card-subtitle">Subtitle</p>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium
-                            molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus atque
-                            voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
-                    </div>
-                    <img class="card-img-bottom" src="https://placehold.co/100" alt="">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Title</h2>
+                    <p class="card-subtitle">Subtitle</p>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+                        accusantium
+                        molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus
+                        atque
+                        voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
+                </div>
+                <img class="card-img-bottom" src="assets/img/a2Background.svg" alt="">
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="assets/img/a2Background.svg" alt="">
+                <div class="card-body card-img-overlay">
+                    <h2 class="card-title">Title</h2>
+                    <p class="card-subtitle">Subtitle</p>
+                    <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, vitae nulla!
+                        Soluta, aut pariatur? In aspernatur optio distinctio?</div>
                 </div>
             </div>
 
-            <div>
-                <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/100" alt="">
-                    <div class="card-body card-img-overlay" >     
-                        <h2 class="card-title">Title</h2>
-                        <p class="card-subtitle">Subtitle</p>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium
-                            molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus atque
-                            voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
+            <div class="card">
+                <h2 class="card-header">Header</h2>
+                <div class="card-body">
+                    <h3 class="card-title">Title</h3>
+                    <p class="card-subtitle">Subtitle</p>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+                        accusantium
+                        molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus
+                        atque
+                        voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
+                </div>
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f10Card"
+                aria-expanded="false" aria-controls="f10Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f10Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id10Cards"></pre>
                     </div>
                 </div>
             </div>
-
-            <div>
-                <div class="card">
-                    <h2 class="card-header">Header</h2>
-                    <div class="card-body" >     
-                        <h3 class="card-title">Title</h3>
-                        <p class="card-subtitle">Subtitle</p>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium
-                            molestias. Similique provident molestiae illum aliquam, quidem neque officia laborum doloribus atque
-                            voluptatibus sequi! Laudantium vitae rerum maiores earum porro?</div>
-                    </div>
-                    <div class="card-footer">Footer</div>
-                </div>
-            </div>
-
         </div>
     </section>
 
+    <section class="section11">
+        <header class="container-fluid">
+            <h2>Modals</h2>
+        </header>
+        <div class="container-fluid">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                Open
+            </button>
+
+            <div class="modal modal-md fade" id="modal1">
+                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Header</h2>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quod,
+                            beatae in, omnis voluptas consectetur debitis, veniam laborum provident eum ex ratione
+                            soluta unde. Rerum fuga fugit beatae non officia labore explicabo enim consequatur
+                            cupiditate repellendus aspernatur reprehenderit aperiam voluptates doloribus, veniam in?
+                            Vitae, amet hic, doloremque, cupiditate asperiores natus fuga repudiandae delectus minus
+                            aperiam ut suscipit? A perferendis at esse porro cum eligendi laboriosam incidunt vel
+                            dolorum, beatae sed voluptas quae totam maxime rem repellat dolore nam numquam ad eius natus
+                            minima ex consequatur iusto! Veniam pariatur odio nisi, harum explicabo debitis voluptas
+                            placeat! Sequi animi placeat deserunt ducimus sed error debitis. Quo deleniti, nam sit nulla
+                            omnis, veritatis, quam est placeat tempora nihil iusto obcaecati repudiandae totam error
+                            ratione. Similique sequi blanditiis quidem fugit libero, error eaque. Tempore aliquid
+                            exercitationem porro qui nam totam quas praesentium, similique autem asperiores doloribus
+                            voluptatem natus consequatur eaque ipsa nisi facere maiores corporis architecto atque.
+                            Tempora enim minima quae consequatur possimus laborum minus perferendis, est accusamus
+                            tempore debitis dolor accusantium ad, deleniti veritatis facere assumenda rem magni
+                            voluptatibus, beatae esse. Id enim veniam optio voluptas modi explicabo eligendi ad eos qui
+                            facere nostrum minima quo illum corporis inventore velit ullam eum, recusandae vitae nulla
+                            adipisci suscipit doloremque. Itaque voluptates odit consequuntur vitae ipsum velit soluta
+                            et ut accusantium quisquam voluptatibus saepe architecto aliquid a fugiat veritatis hic
+                            assumenda, expedita corrupti quia ullam deleniti ipsam? Dolore quaerat quia quibusdam maxime
+                            sint veniam iure itaque omnis, sit architecto, reprehenderit facere minima fugiat
+                            voluptatum, exercitationem reiciendis dolorem culpa sunt? Libero assumenda mollitia rem
+                            dolorem cupiditate voluptate harum, deserunt quia accusamus eaque minus accusantium illum
+                            saepe a error officia molestias quasi, itaque non! Iste maiores ipsa vitae maxime expedita
+                            cum nobis itaque quisquam, reiciendis aut tenetur debitis consequatur, magni cupiditate!
+                            Quasi sunt consectetur eligendi velit perspiciatis.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f11Card"
+                aria-expanded="false" aria-controls="f11Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f11Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id11Modals"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section12">
+        <header class="container-fluid">
+            <h2>Navbars</h2>
+        </header>
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container">
+                    <a href="" class="navbar-brand">Brand</a>
+
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#a1navItems"
+                        aria-controls="nav" aria-label="Expand navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="a1navItems">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">Section active</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Section 2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Section 3</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link disabled">Section disabled</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas, ducimus, debitis sequi cum, deserunt
+                maxime vitae officiis quis veritatis vel? Amet iste porro consequuntur doloribus hic repellendus
+                officiis necessitatibus.
+            </div>
+        </div>
+
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f12Card"
+                aria-expanded="false" aria-controls="f12Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f12Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id12Nav"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section13">
+        <header class="container-fluid">
+            <h2>Color Utilities</h2>
+            <p>Note: you can use other colors, like: primary, secondary...</p>
+        </header>
+
+        <div class="container-fluid card-group">
+            <div class="card bg-dark text-light">
+                <div class="card-body">Text (class="bg-dark text-light")</div>
+            </div>
+            <div class="card text-bg-dark">
+                <div class="card-body">Text (class="text-bg-dark")</div>
+            </div>
+            <div class="card bg-primary bg-opacity-25">
+                <div class="card-body">Text (class="card bg-primary bg-opacity-25")</div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <a href="#" class="text-dark">Link (href="#" class="text-dark")</a>
+                    <a href="#" class="link-dark">Link (href="#" class="link-dark")</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section14-StackUtilities">
+        <header class="container-fluid">
+            <h2>Stack Utilities</h2>
+            <p>It's a class for flexbox</p>
+        </header>
+        <div>
+            <div class="vstack gap-3" style="margin: 9px;">
+                <div class="box" style="height: 10vh; width: 100%;"></div>
+                <div class="box" style="height: 10vh; width: 100%;"></div>
+            </div>
+            <div class="hstack gap-3" style="margin: 9px;">
+                <div class="box" style="height: 10vh; width: 100%;"></div>
+                <div class="box" style="height: 10vh; width: 100%;"></div>
+                <div class="box" style="height: 10vh; width: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid buttonB">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f14Card"
+                aria-expanded="false" aria-controls="f14Card">
+                Show/Hide code
+            </button>
+
+            <div class="collapse" id="f14Card">
+                <div class="code container-fluid">
+                    <div class="code-html">
+                        <pre id="id14StackUtilities"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section15-BorderUtilities">
+        <header class="container-fluid">
+            <h2>Border Utilities</h2>
+        </header>
+
+        <div class="row row-cols-3 row-cols-md-6 gy-2 gx-2" style="margin:0">
+            <div class="col">
+                <div class="border border-primary border-3 rounded-3">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Placeat.</div>
+            </div>
+            <div class="col">
+                <div class="border border-primary border-3 rounded-pill">Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Cupiditate.</div>
+            </div>
+            <div class="col">
+                <div class="col border border-primary border-3 rounded-circle">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Tempora!</div>
+            </div>
+            <div class="col">
+                <div class="col border border-primary border-3 rounded-bottom">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Tempora!</div>
+            </div>
+            <div class="col">
+                <div class="col border-top border-primary border-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Tempora!</div>
+            </div>
+            <div class="col">
+                <div class="col border-bottom border-primary border-3">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Tempora!</div>
+            </div>
+        </div>
+
+        <div class="container-fluid buttonB">
+          <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#f15Card" aria-expanded="false" aria-controls="f15Card">
+            Show/Hide code
+          </button>
+          
+          <div class="collapse" id="f15Card">
+            <div class="code container-fluid">
+                <div class="code-html">
+                    <pre id="id15BorderUtilities"></pre>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section16-DisplayUtilities">
+        <header class="container-fluid">
+            <h2>Display Utilities</h2>
+            <p>Try move or adjust your window size</p>
+        </header>
+
+        <div class="container-fluid">
+            <h3 class="d-block d-sm-none">
+                class="d-block d-sm-none"
+            </h3>
+
+            <h3 class="d-block d-md-none">
+                class="d-block d-md-none"
+            </h3>
+            <h3 class="d-block d-lg-none">
+                class="d-block d-lg-none"
+            </h3>
+            <h3 class="d-block d-xl-none">
+                class="d-block d-xl-none"
+            </h3>
+            <h3 class="d-block d-xxl-none">
+                class="d-block d-xxl-none"
+            </h3>
+        </div>
+    </section>
 </body>
 
 </html>

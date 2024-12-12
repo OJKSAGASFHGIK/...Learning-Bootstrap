@@ -1,4 +1,4 @@
-header.container-fluid { background: cyan }
+header.container-fluid { background: cyan; margin-top: 9px; }
 .introduction h1 {
     color: white; background: red;
     text-align: center;}
@@ -8,11 +8,18 @@ header.container-fluid { background: cyan }
     content: "Code: "; color: orangered;
 } .code { border: orangered solid 1px; margin-top: 9px; }
 .code-html::before {
-    content: "HTML: "; color: orangered;
+    content: "HTML:"; color: orangered;
 } .code-html { border: orangered solid 1px; margin-top: 9px; }
 .code-css::before {
     content: "CSS: "; color: orangered;
 } .code-css { border: orangered solid 1px; margin-top: 9px; }
+
+
+/**/
+.box {
+    background: lightsalmon; border: red 3px solid;
+        }
+.buttonB { margin: 9px 0; }
 
 /**/
 .section2 .row { margin: 0; }

@@ -1,0 +1,39 @@
+document.getElementById("id10Cards").innerHTML =
+`&lt;div class=&quot;card-group&quot; style=&quot;margin: 9px 27px&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;https://placehold.co/100&quot; alt=&quot;&quot;&gt;
+        &lt;div class=&quot;card-body&quot; &gt;     
+            &lt;h2 class=&quot;card-title&quot;&gt;Title&lt;/h2&gt;
+            &lt;p class=&quot;card-subtitle&quot;&gt;Subtitle&lt;/p&gt;
+            &lt;div class=&quot;card-text&quot;&gt;Text-Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body&quot; &gt;     
+            &lt;h2 class=&quot;card-title&quot;&gt;Title&lt;/h2&gt;
+            &lt;p class=&quot;card-subtitle&quot;&gt;Subtitle&lt;/p&gt;
+            &lt;div class=&quot;card-text&quot;&gt;Text-Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;card-img-bottom&quot; src=&quot;https://placehold.co/100&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;https://placehold.co/100&quot; alt=&quot;&quot;&gt;
+        &lt;div class=&quot;card-body card-img-overlay&quot; &gt;     
+            &lt;h2 class=&quot;card-title&quot;&gt;Title&lt;/h2&gt;
+            &lt;p class=&quot;card-subtitle&quot;&gt;Subtitle&lt;/p&gt;
+            &lt;div class=&quot;card-text&quot;&gt;Text-Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;h2 class=&quot;card-header&quot;&gt;Header&lt;/h2&gt;
+        &lt;div class=&quot;card-body&quot; &gt;     
+            &lt;h3 class=&quot;card-title&quot;&gt;Title&lt;/h3&gt;
+            &lt;p class=&quot;card-subtitle&quot;&gt;Subtitle&lt;/p&gt;
+            &lt;div class=&quot;card-text&quot;&gt;Text-Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer&quot;&gt;Footer&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;`;
