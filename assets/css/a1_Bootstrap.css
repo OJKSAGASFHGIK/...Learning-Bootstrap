@@ -1,7 +1,11 @@
 header.container-fluid { background: cyan; margin-top: 9px; }
 .introduction h1 {
     color: white; background: red;
-    text-align: center;}
+    text-align: center;
+    font-size: 3rem; }
+@media (max-width:768px){
+    .introduction h1 { font-size: 2rem; }
+}
 
 /**/
 .code::before {
@@ -31,5 +35,3 @@ header.container-fluid { background: cyan; margin-top: 9px; }
 .section3 .row { margin: 0; }
 .section3 .s3grid div div { height:9.5vh;
     background: red; border: purple solid 1px; }
-
-/**/

@@ -16,7 +16,7 @@
 
 <body>
     <header class="introduction">
-        <h1 class="container-fluid">Introduction to Bootstrap</h1>
+        <h1 class="container-fluid p-3">Introduction to Bootstrap</h1>
         <p class="container">Bootstrap is a framework where you can literally use an automatic set of styles in your
             code. In this case,
             you can just link the bootstrap in your HTML file and use a bootstrap class to use these styles. </p>
@@ -687,7 +687,7 @@ div.container-fluid
             <h2>Border Utilities</h2>
         </header>
 
-        <div class="row row-cols-3 row-cols-md-6 gy-2 gx-2" style="margin:0">
+        <div class="row row-cols-3 row-cols-md-6 gy-2 gx-2 m-0" >
             <div class="col">
                 <div class="border border-primary border-3 rounded-3">Lorem ipsum, dolor sit amet consectetur
                     adipisicing elit. Placeat.</div>
@@ -754,6 +754,53 @@ div.container-fluid
             </h3>
         </div>
     </section>
+
+    <section class="section17-SpacingUtilities">
+        <Header class="container-fluid">
+            <h2>Spacing Utilities</h2>
+            <p>
+                Notes:<br>
+                p is <span class="text-bg-info">Padding</span><br>
+                m is <span class="text-bg-info">Margin</span><br>
+                <br>
+                pt = <span class="text-bg-info">Padding top</span><br>
+                pe = <span class="text-bg-info">Padding right</span><br>
+                pb = <span class="text-bg-info">Padding bottom</span><br>
+                ps = <span class="text-bg-info">Padding left</span><br>
+                <span class="text-bg-secondary">Btw, It works for margin to</span>
+            </p>
+        </Header>
+        <div class="row gy-2 gx-2 m-0">
+            <div class="col-12"><div class="box p-5">class="p-5"</div></div>
+            <div class="col-3"><div class="box pt-5">class="pt-5"</div></div>
+            <div class="col-3"><div class="box pe-5">class="pe-5"</div></div>
+            <div class="col-3"><div class="box pb-5">class="pb-5"</div></div>
+            <div class="col-3"><div class="box ps-5">class="ps-5"</div></div>
+            <div class="col-12"><div class="box m-5">class="m-5"</div></div>
+        </div>
+    </section>
+
+    <section class="section18-FlexboxUtilities">
+        <header class="container-fluid">
+            <h2>Flexbox Utilities</h2>
+        </header>
+        <div class="container-fluid mb-2 d-flex justify-content-between">
+            <div class="box" style="height: 100px; width: 100px;"></div>
+            <div class="box" style="height: 100px; width: 100px;"></div>
+            <div class="box" style="height: 100px; width: 100px;"></div>
+        </div>
+        <div class="container-fluid text-bg-dark">
+            <p>I won't deep high in this. You can use this applying flexbox here, almost like in CSS. What can I say better? Practice.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text-bg-secondary p-3 d-flex justify-content-center">
+            <h2 >
+                Now you know Bootstrap
+            </h2>
+        </div>
+    </footer>
 </body>
 
 </html>
