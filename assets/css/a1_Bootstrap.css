@@ -20,6 +20,7 @@ header.container-fluid { background: cyan; margin-top: 9px; }
 
 
 /**/
+.navbar ul li { border-bottom: gray solid 1px }
 .box {
     background: lightsalmon; border: red 3px solid;
         }

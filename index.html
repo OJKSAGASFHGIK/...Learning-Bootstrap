@@ -15,14 +15,104 @@
 </head>
 
 <body>
-    <header class="introduction">
-        <h1 class="container-fluid p-3">Introduction to Bootstrap</h1>
+    <aside class="navbar navbar-dark bg-dark text-bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Introduction</a>
+            
+            <button class="dropdown-toggle-split bg-dark" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="nav" aria-label="Expand navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav overflow-y-auto" style="max-height: 300px;">
+                    <li class="nav-item"><a href="#id1ContainersAndBreakpoints" class="nav-link">Containers and Breakpoints</a></li>
+                    <li class="nav-item"><a href="#id2Columns" class="nav-link">Columns</a></li>
+                    <li class="nav-item"><a href="#id3Columns2" class="nav-link">Columns: breakpoints and g, gx and gy(gap (gap until 5, ex: gy-5))</a></li>
+                    <li class="nav-item"><a href="#id4Table" class="nav-link">Table</a></li>
+                    <li class="nav-item"><a href="#id5FormBasics" class="nav-link">Form Basics</a></li>
+                    <li class="nav-item"><a href="#id6InputGroups" class="nav-link">Input Groups</a></li>
+                    <li class="nav-item"><a href="#id7FloatingLabels" class="nav-link">Floating Labels</a></li>
+                    <li class="nav-item"><a href="#id8Buttons" class="nav-link">Buttons</a></li>
+                    <li class="nav-item"><a href="#id9Alerts" class="nav-link">Alerts</a></li>
+                    <li class="nav-item"><a href="#id10Cards" class="nav-link">Cards</a></li>
+                    <li class="nav-item"><a href="#id11Modals" class="nav-link">Modals</a></li>
+                    <li class="nav-item"><a href="#id12Navbars" class="nav-link">Navbars</a></li>
+                    <li class="nav-item"><a href="#id13ColorUtilities" class="nav-link">Color Utilities</a></li>
+                    <li class="nav-item"><a href="#id14StackUtilities" class="nav-link">Stack Utilities</a></li>
+                    <li class="nav-item"><a href="#id15BorderUtilities" class="nav-link">Border Utilities</a></li>
+                    <li class="nav-item"><a href="#id16DisplayUtilities" class="nav-link">Display Utilities</a></li>
+                    <li class="nav-item"><a href="#id17SpacingUtilities" class="nav-link">Spacing Utilities</a></li>
+                    <li class="nav-item"><a href="#id18FlexboxUtilities" class="nav-link">Flexbox Utilities</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    
+    <!--Script for add one space after navbar-->
+    <script>
+        function adjustPadding() {
+            const navbar = document.querySelector('.navbar');
+            const body = document.body;
+            if (navbar) {
+            const navbarHeight = navbar.offsetHeight;
+            body.style.paddingTop = `${navbarHeight}px`;
+            }
+        }
+
+        // Ajusta o padding inicial e sempre que a janela é redimensionada
+        document.addEventListener('DOMContentLoaded', adjustPadding);
+        window.addEventListener('resize', adjustPadding);
+    </script>
+    <!--Script for adjusting the click on an item-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona todos os links de navegação
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Para cada link, adiciona um evento de clique
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Previne o comportamento padrão do link
+            event.preventDefault();
+            
+            // Obtém o destino do link (a id da seção)
+            const targetId = this.getAttribute('href').substring(1);  // Remove o #
+            const targetElement = document.getElementById(targetId);
+            
+            // Obtém o menu de navegação e instancia o colapso
+            const collapse = document.getElementById('navItems');
+            const collapseInstance = new bootstrap.Collapse(collapse);
+            
+            // Fecha o menu da navbar (colapsa)
+            collapseInstance.hide();
+            
+            // Usa setTimeout para aguardar o colapso antes de rolar
+            setTimeout(function() {
+                // Obtém a altura da navbar
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                
+                // Calcula a posição da seção considerando o final da navbar
+                const targetPosition = targetElement.offsetTop - navbarHeight;
+                
+                // Desloca a página até a seção, levando em consideração a altura da navbar
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'  // Rolagem suave
+                });
+            }, 300);  // Ajuste o tempo (300ms) para o tempo necessário para o colapso
+        });
+    });
+});
+
+    </script>
+
+    <header class="introduction mt-3">
         <p class="container">Bootstrap is a framework where you can literally use an automatic set of styles in your
             code. In this case,
             you can just link the bootstrap in your HTML file and use a bootstrap class to use these styles. </p>
     </header>
 
-    <section class="section1">
+    <section class="section1" id="id1ContainersAndBreakpoints">
         <header class="container-fluid">
             <h2 class="">Containers & breakpoint basics</h2>
         </header>
@@ -40,7 +130,7 @@
         </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" id="id2Columns">
         <header class="container-fluid">
             <h2>Columns</h2>
             <p>It's for using "grid" directly in html tags (<span style="color:red">The sum of col has to be igual 12,
@@ -81,7 +171,7 @@
         </div>
     </section>
 
-    <section class="section3">
+    <section class="section3" id="id3Columns2">
         <header class="container-fluid">
             <h2>
                 Columns: <span style="color:blue">breakpoints</span> and <span style="color:red">g, gx and gy</span>(gap
@@ -124,7 +214,7 @@
         </div>
     </section>
 
-    <section class="section4">
+    <section class="section4" id="id4Table">
         <header class="container-fluid">
             <h2>Table</h2>
         </header>
@@ -172,7 +262,7 @@
         </div>
     </section>
 
-    <section class="section5">
+    <section class="section5" id="id5FormBasics">
         <header class="container-fluid">
             <h2>Form Basics</h2>
         </header>
@@ -303,7 +393,7 @@ div class="form-check form-switch form-check-inline"
         </div>
     </section>
 
-    <section class="section6">
+    <section class="section6" id="id6InputGroups">
         <header class="container-fluid">
             <h2>Input Groups</h2>
         </header>
@@ -340,7 +430,7 @@ button {Submit}
         </div>
     </section>
 
-    <section class="section7">
+    <section class="section7" id="id7FloatingLabels">
         <header class="container-fluid">
             <h2>Floating Labels</h2>
         </header>
@@ -372,7 +462,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section8">
+    <section class="section8" id="id8Buttons">
         <header class="container-fluid">
             <h2>Buttons</h2>
         </header>
@@ -410,7 +500,7 @@ div.container-fluid
 
     </section>
 
-    <section class="section9">
+    <section class="section9" id="id9Alerts">
         <header class="container-fluid">
             <h2>Alerts</h2>
             <p>Try clicking on <span style="color:red">X</span></p>
@@ -437,7 +527,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section10-Cards">
+    <section class="section10-Cards" id="id10Cards">
         <header class="container-fluid">
             <h2>Cards</h2>
             <p>If you want to do spaces between the cards, instead of using "<span style="color:red">.card-group</span>"
@@ -512,7 +602,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section11">
+    <section class="section11" id="id11Modals">
         <header class="container-fluid">
             <h2>Modals</h2>
         </header>
@@ -578,7 +668,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section12">
+    <section class="section12" id="id12Navbars">
         <header class="container-fluid">
             <h2>Navbars</h2>
         </header>
@@ -624,7 +714,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section13">
+    <section class="section13" id="id13ColorUtilities">
         <header class="container-fluid">
             <h2>Color Utilities</h2>
             <p>Note: you can use other colors, like: primary, secondary...</p>
@@ -649,7 +739,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section14-StackUtilities">
+    <section class="section14-StackUtilities" id="id14StackUtilities">
         <header class="container-fluid">
             <h2>Stack Utilities</h2>
             <p>It's a class for flexbox</p>
@@ -682,7 +772,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section15-BorderUtilities">
+    <section class="section15-BorderUtilities" id="id15BorderUtilities">
         <header class="container-fluid">
             <h2>Border Utilities</h2>
         </header>
@@ -729,7 +819,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section16-DisplayUtilities">
+    <section class="section16-DisplayUtilities" id="id16DisplayUtilities">
         <header class="container-fluid">
             <h2>Display Utilities</h2>
             <p>Try move or adjust your window size</p>
@@ -755,7 +845,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section17-SpacingUtilities">
+    <section class="section17-SpacingUtilities" id="id17SpacingUtilities">
         <Header class="container-fluid">
             <h2>Spacing Utilities</h2>
             <p>
@@ -780,7 +870,7 @@ div.container-fluid
         </div>
     </section>
 
-    <section class="section18-FlexboxUtilities">
+    <section class="section18-FlexboxUtilities" id="id18FlexboxUtilities">
         <header class="container-fluid">
             <h2>Flexbox Utilities</h2>
         </header>
